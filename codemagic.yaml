@@ -16,5 +16,5 @@ workflows:
               script: |
                 npm run make  
         artifacts:
-            - out/make/zip/darwin/x64/*.zip
-            - out/my-electron-app-darwin-x64/my-electron-app.app/Contents/MacOS/my-electron-app
+            - out/make/zip/darwin/arm64/*.zip
+            - out/my-electron-app-darwin-arm64/my-electron-app.app/Contents/**/my-electron-app
