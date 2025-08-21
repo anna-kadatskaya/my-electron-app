@@ -16,5 +16,5 @@ workflows:
               script: |
                 npm run make  
         artifacts:
-            - out/make/zip/darwin/arm64/*.zip
-            - out/my-electron-app-darwin-arm64/my-electron-app.app/Contents/**/my-electron-app
+            - out\make\squirrel.windows\x64\my-electron-app-1.0.0 Setup.exe
+            - out\my-electron-app-win32-x64\my-electron-app.exe
