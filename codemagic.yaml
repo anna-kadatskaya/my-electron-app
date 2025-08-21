@@ -1,0 +1,20 @@
+# Check out https://docs.codemagic.io/yaml/building-a-react-native-app/ for more information
+# Please review and update values
+
+workflows:
+    electron-workflow:
+        name: Electron
+        max_build_duration: 120
+        instance_type: mac_mini_m2
+        scripts:
+            - name: Import project into Forge
+              script: |
+                npm install
+                npm install --save-dev @electron-forge/cli
+                npx electron-forge import
+            - name: Create a distributable
+              script: |
+                npm run make  
+        artifacts:
+            - out/make/zip/darwin/x64/*.zip
+            - out/my-electron-app-darwin-x64/my-electron-app.app/Contents/MacOS/my-electron-app
