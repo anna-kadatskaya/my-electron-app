@@ -1,9 +1,9 @@
 {
   "name": "my-electron-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "My first Electron app",
   "license": "ISC",
-  "author": "",
+  "author": "Anna Kadatskaya",
   "type": "commonjs",
   "main": "main.js",
   "scripts": {
